@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.parent-container{
+    margin: 20px auto;
+    width:100%;
+    height: 100vh;
+
+}
+
+.parent-container .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 30px;
+}
+
+
+/* .parent-container .contents .image{
+    width: 95%;
+    margin: auto;
+}
+
+.parent-container .contents .image img{
+    width: 100%;
+} */
+
+/* .parent-container .contents .buttons h2{
+    font-size: 25px;
+
+} */
+
+.parent-container .contents .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parent-container .contents .buttons button{
+    border: 2px solid black;
+    background-color: green;
+    padding: 12px 0;
+    border-radius: 20px;
+}
+
+.parent-container .contents .buttons button a{
+    /* padding:15px 0; */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:700px) {
+    .parent-container .contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .parent-container .contents .image{
+        width: 95%;
+        margin: auto;
+    }
+    
+    .parent-container .contents .image img{
+        width: 100%;
+    }
+}
